@@ -1,11 +1,21 @@
-public class Usuari {
-    private String nomDelUsuari;
+import java.time.LocalDate;
 
-    public Usuari(String nomUsuari) {
-        this.nomDelUsuari = nomUsuari;
+public class Usuari {
+    private final int id;
+    private static int ultimId = 0;
+
+    private String nickname;
+    private String nom;
+    private String cognoms;
+    private String correu;
+    private LocalDate dataNaixement;
+    public Usuari(String nickname) {
+        this.nickname = nickname;
+        ultimId++;
+        this.id = ultimId;
     }
 
-    public String getNomDelUsuari() {
-        return nomDelUsuari;
+    public String getIdentificador() {
+        return nickname+"#"+String.format("%04d", id);
     }
 }
