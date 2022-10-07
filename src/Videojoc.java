@@ -2,6 +2,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Videojoc {
+    //hola
     private String nom;
     private String genere;
     private int numeroJugadors;
