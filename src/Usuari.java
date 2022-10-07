@@ -1,3 +1,5 @@
+package src;
+
 public class Usuari {
     private String nomDelUsuari;
 
