@@ -18,4 +18,8 @@ public class Usuari {
     public String getIdentificador() {
         return nickname+"#"+String.format("%04d", id);
     }
+
+    public String getNomDelUsuari() {
+        return this.nom;
+    }
 }
