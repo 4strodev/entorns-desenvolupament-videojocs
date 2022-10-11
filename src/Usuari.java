@@ -1,5 +1,8 @@
 import java.time.LocalDate;
+
+//Nou Comentaria Janira
 //Edgar
+
 public class Usuari {
     private final int id;
     private static int ultimId = 0;
