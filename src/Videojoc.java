@@ -3,6 +3,8 @@ import java.util.Set;
 
 public class Videojoc {
     //hola
+    //Hola de nuevo
+    //Adios
     private String nom;
     private String genere;
     private int numeroJugadors;
