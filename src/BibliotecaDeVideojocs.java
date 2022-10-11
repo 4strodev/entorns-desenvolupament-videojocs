@@ -1,6 +1,7 @@
 import java.util.HashSet;
 import java.util.Set;
 // Java we will kill you
+// some day
 public class BibliotecaDeVideojocs {
     private Set<Videojoc> videojocs;
 
