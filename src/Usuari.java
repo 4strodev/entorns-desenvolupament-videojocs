@@ -25,5 +25,7 @@ public class Usuari {
 
     public String getNomDelUsuari() {
         return this.nom;
+
+        //Nou comentari
     }
 }
