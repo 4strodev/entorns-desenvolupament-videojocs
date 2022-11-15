@@ -39,7 +39,7 @@ public class Videojoc {
     }
 
     public void setGenere(String genere) {
-        this.ambientacio = genere;
+        this.genere = genere;
     }
 
     public int getNumeroJugadors() {
@@ -55,7 +55,7 @@ public class Videojoc {
     }
 
     public void setPreu(float preu) {
-        this.preu = this.preu;
+        this.preu = preu;
     }
 
     public String getPlataformes() {
@@ -67,7 +67,7 @@ public class Videojoc {
     }
 
     public String getAmbientacio() {
-        return genere;
+        return ambientacio;
     }
 
     public void setAmbientacio(String ambientacio) {
