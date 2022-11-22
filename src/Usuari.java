@@ -26,6 +26,11 @@ public class Usuari {
         return nickname+"#"+String.format("%04d", id);
     }
 
+    public String getNomDelUsuari() {
+        return nom;
+    }
+
+        //Nou comentari
     public void afegirComentari(Videojoc videojoc, String textDelComentari) {
         Comentari comentari = new Comentari(textDelComentari);
         videojoc.afegirComentari(comentari);
