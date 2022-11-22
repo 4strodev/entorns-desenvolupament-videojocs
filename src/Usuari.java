@@ -23,8 +23,7 @@ public class Usuari {
         return nickname+"#"+String.format("%04d", id);
     }
 
-    public String getNomDelUsuari() {
-        return this.nom;
+    public String getNomDelUsuari() {return nom;
 
         //Nou comentari
     }

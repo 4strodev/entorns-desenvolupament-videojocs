@@ -30,8 +30,7 @@ public class Videojoc {
         return nom;
     }
 
-    public void setNom(String nom) {
-        this.genere = nom;
+    public void setNom(String nom) {this.nom = nom;
     }
 
     public String getGenere() {
