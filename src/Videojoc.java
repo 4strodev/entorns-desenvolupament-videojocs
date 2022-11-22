@@ -2,9 +2,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Videojoc {
-    //hola
-    //Hola de nuevo
-    //Adios
     private String nom;
     private String genere;
     private int numeroJugadors;
@@ -17,6 +14,8 @@ public class Videojoc {
 
     private Set<Usuari> usuarisQueHanConsultat;
 
+    private Set<Comentari> comentaris;
+
     public Set<Usuari> getUsuarisQueHanConsultat() {
         return usuarisQueHanConsultat;
     }
@@ -24,13 +23,15 @@ public class Videojoc {
     public Videojoc(String nom) {
         this.nom = nom;
         usuarisQueHanConsultat = new HashSet<>();
+        comentaris = new HashSet<>();
     }
 
     public String getNom() {
         return nom;
     }
 
-    public void setNom(String nom) {this.nom = nom;
+    public void setNom(String nom) {
+        this.nom = nom;
     }
 
     public String getGenere() {
@@ -38,7 +39,7 @@ public class Videojoc {
     }
 
     public void setGenere(String genere) {
-        this.ambientacio = genere;
+        this.genere = genere;
     }
 
     public int getNumeroJugadors() {
@@ -54,7 +55,7 @@ public class Videojoc {
     }
 
     public void setPreu(float preu) {
-        this.preu = this.preu;
+        this.preu = preu;
     }
 
     public String getPlataformes() {
@@ -66,7 +67,7 @@ public class Videojoc {
     }
 
     public String getAmbientacio() {
-        return genere;
+        return ambientacio;
     }
 
     public void setAmbientacio(String ambientacio) {
@@ -114,5 +115,13 @@ public class Videojoc {
 
     public void afegirUsuariQueConsulta(Usuari usuari) {
         usuarisQueHanConsultat.add(usuari);
+    }
+
+    public void afegirComentari(Comentari comentari) {
+        comentaris.add(comentari);
+    }
+
+    public Set<Comentari> getComentaris() {
+        return comentaris;
     }
 }
