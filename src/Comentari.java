@@ -11,6 +11,10 @@ public class Comentari {
         data = LocalDate.from(LocalDate.now());
     }
 
+    public Comentari(String textDelComentari) {
+
+    }
+
     public String getText() {
         return text;
     }
