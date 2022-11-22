@@ -27,7 +27,7 @@ public class Usuari {
     }
 
     public void afegirComentari(Videojoc videojoc, String textDelComentari) {
-        Comentari comentari = new Comentari(this, textDelComentari);
+        Comentari comentari = new Comentari(textDelComentari);
         videojoc.afegirComentari(comentari);
     }
 }
