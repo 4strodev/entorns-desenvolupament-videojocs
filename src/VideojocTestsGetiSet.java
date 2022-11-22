@@ -1,5 +1,7 @@
 import org.junit.jupiter.api.Test;
 
+import java.util.Set;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class VideojocTestsGetiSet {
@@ -13,6 +15,7 @@ class VideojocTestsGetiSet {
     public static final String EDAT_PEGI = "PEGI 12";
     public static final String CONTINGUT_ESPECIFIC_PEGI = "Violencia";
     public static final String REQUISIT = "Windows 10";
+
 
     @Test
     void setIGetNom() {
@@ -71,6 +74,31 @@ class VideojocTestsGetiSet {
         Videojoc testVideojoc = new Videojoc(NOM_VIDEOJOC);
         testVideojoc.setRequisits(REQUISIT);
         assertEquals(REQUISIT, testVideojoc.getRequisits());
+    }
+
+    @Test
+    void afegirUsuariQueConsulta() {
+        Videojoc testVideojoc = new Videojoc(NOM_VIDEOJOC);
+        Usuari usuari = new Usuari("Alejandro");
+        testVideojoc.afegirUsuariQueConsulta(usuari);
+        Set<Usuari> usuarisQueHanConsultat = testVideojoc.getUsuarisQueHanConsultat();
+        assert(usuarisQueHanConsultat.contains(usuari));
+    }
+    @Test
+    void afegirComentari() {
+        Videojoc testVideojoc = new Videojoc(NOM_VIDEOJOC);
+        Usuari usuari = new Usuari("Alejandro");
+        Comentari comentari = new Comentari(usuari, "Muy buenoooo");
+        testVideojoc.afegirComentari(comentari);
+        Set<Comentari> comentaris = testVideojoc.getComentaris();
+        assert(comentaris.contains(comentari));
+    }
+    @Test
+    void getComentaris() {
+        Videojoc testVideojoc = new Videojoc(NOM_VIDEOJOC);
+        Usuari usuari = new Usuari("Alejandro");
+        Comentari comentari = new Comentari(usuari, "Muy buenoooo");
+        testVideojoc.getComentaris();
     }
 }
 
